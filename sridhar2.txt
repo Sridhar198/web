@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<style>
+body {
+
+  background-color:red;
+
+}
+</style>
+<body>
+</head>
+
+<h1>EVENT REGISTRATION</h1>
+<form>
+Name of Participant:<br><input type="text" name="Name of Participant" value=" "><br>
+Departmant:<br><input type="text" name="Department" value=" "><br>
+Year:<br><input type="num" name="Year" value=" "><br>
+Institution Name:<br><input type="text" name="Institution Name" value=" "><br>
+City:<br><input type="list" list=["Madurai","Trichy","Coimbatore","Chennai"] value=" "><br>
+Gender:<br>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+EVENTS INTERESTED TO PARTICIPATE :<br><br>
+<h2>Athletic CM trophy</h2>
+<input type="checkbox" name="event" value="100m">100m<br>
+<input type="checkbox" name="event" value="200m">200m<br>
+<input type="checkbox" name="event" value="400m">400m<br>
+<input type="checkbox" name="event" value="1500m">1500m<br>
+<br> CHOOSE EVENT :<BR>
+<select name="throw event"><br>
+  <option value="Discus throw">discus throw</option>
+  <option value="Javelin ">Javelin</option>
+  <option value="Shot put">Shot put</option>
+  <option value="Hammer throw">Hammer throw</option>
+</select>
+  <br>
+<br>SUGGESTIONS :<br>
+<textarea name="suggestions" rows="3" cols="60">
+</textarea>
+<br><br><button type="button"> SUBMIT </button>
+</form>
+
+</body>
+</html>
