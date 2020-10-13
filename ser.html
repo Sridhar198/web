@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+AngularJs Custom Service Example
+</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type="text/javascript">
+var app = angular.module('appServices', []);
+app.service('angularServices', function ($http) {
+this.squareofnumber = function (x) {
+return x * x;
+}
+});
+app.controller("angularController", function ($scope, angularServices) {
+$scope.getresult = angularServices.squareofnumber(10);
+});
+</script>
+</head>
+<body ng-app="appServices">
+<h2>AngularJS Custom Service Example</h2>
+<div ng-controller="angularController">
+<p>AngularJS Custom Service Example</p>
+Square of Number 10 : <b>{{getresult}}</b>
+</div>
+</body>
+</html>
