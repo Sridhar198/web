@@ -1,0 +1,32 @@
+[
+   {
+      "disease": "Smut",
+      "prevent": "Use of healthy seeds",
+      "chemical": "Seed dressing with Vitavax",
+      "rate": "2-2.5 g/kg of seed"
+   },
+   {
+      "disease": "Rust",
+      "prevent": "Use of resistant varieties",
+      "chemical": "Manganese",
+      "rate": "Nill"
+   },
+   {
+      "disease": "Bunts",
+      "prevent": "Use of resistant varieties",
+      "chemical": "Seed dressing with Agrosan Vitavax",
+      "rate": "2 g/kg of seed"
+   },
+   {
+      "disease": "Powdery mildew",
+      "prevent": "Nill",
+      "chemical": "Dusting with yellow sulphur,Sodium thiosulphate, Karathane/Miltox or spraying with Benlate",
+      "rate": "Nill"
+   },
+   {
+      "disease": "Molya",
+      "prevent": "Soil treatment",
+      "chemical": "Nemagon DECP 60% EC dripping with first irrigation water",
+      "rate": "20 litres/ha 30 ml./ha"
+   }
+]

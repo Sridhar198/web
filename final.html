@@ -138,6 +138,31 @@
             </tbody>
         </table>
     </div>
+    <div>
+        <h3>Growth stage and Temprature</h3>
+        <ul id ="stage1"></ul>
+        <ul id ="stage2"></ul>
+        <ul id ="stage3"></ul>
+        <ul id ="stage4"></ul>
+        <ul id ="stage5"></ul>
+    </div>
+    <script>
+        var text = '{"stages":['+
+       '{"name": "Germination","id": "1","temperature": "20 to 25 0 C mean daily temperature"},'+
+       '{"name": "Tillering","id": "2","temperature": "16 to 20 0 C mean daily temperature"},'+
+       '{"name": "Accelerated growth","id": "3", "temperature": "20 to 23 0 C mean daily temperature"},'+
+       '{"name": "Proper gain filling","id": "4","temperature": "23 to 25 0 C mean daily temperature"},'+
+       '{"name": "Reproductive growth","id": "5","temperature": "21 to 25 0 C mean daily temperature"}]}';
+    
+    
+      var obj = JSON.parse(text);
+       document.getElementById("stage1").innerHTML =  "<li>" + obj.stages[0].name + " - " +  obj.stages[0].temperature + "</li>" ;
+        document.getElementById("stage2").innerHTML =  "<li>" + obj.stages[1].name + " - " +  obj.stages[1].temperature + "</li>" ;
+         document.getElementById("stage3").innerHTML =  "<li>" + obj.stages[2].name + " - " +  obj.stages[2].temperature + "</li>" ;
+          document.getElementById("stage4").innerHTML =  "<li>" + obj.stages[3].name + " - " +  obj.stages[3].temperature + "</li>" ;
+           document.getElementById("stage5").innerHTML =  "<li>" + obj.stages[4].name + " - " +  obj.stages[4].temperature + "</li>" ;
+    
+    </script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
     <script type="text/javascript" src="final.js"></script>  
     <div ng-controller="formCtrl">
@@ -145,11 +170,28 @@
         <form name="personForm" ng-submit="sendForm()">
         First Name:<input type="text" name="firstname" ng-model="person.fname" required />
         <span ng-show="personForm.firstname.$error.required"> Required! </span> <br /><br />
-        Last Name:<input type="text" name="request" ng-model="person.lname" required />
+        Last Name:<input type="text" name="lastname" ng-model="person.lname" required />
         <span ng-show="personForm.lastname.$error.required"> Required! </span> <br /><br />
         <button type="submit">Submit Form</button><br /><br />
         <span>{{msg}}</span>
         </form>
         </div>
+    <h2 id="demo"></h2>
+    <h4 id="demo1"></h4>
+    <script>
+            var parser, xmlDoc;
+            var text = "<places><temperature>" +
+            "<title>Thanks for Visiting Us !!!</title>" +
+            "<contact>Email : sridharm@gmail.com</contact>" +
+            "</temperature></places>";
+            
+            parser = new DOMParser();
+            xmlDoc = parser.parseFromString(text,"text/xml");
+            
+            document.getElementById("demo").innerHTML =
+            xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+            document.getElementById("demo1").innerHTML =
+            xmlDoc.getElementsByTagName("contact")[0].childNodes[0].nodeValue;
+    </script>
 </body> 
 </html>

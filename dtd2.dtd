@@ -1,0 +1,25 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Agri (a)+>
+<!ATTLIST Agri
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT a (disease,prevent,chemical,rate)>
+<!ATTLIST a
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT disease (#PCDATA)>
+<!ATTLIST disease
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT prevent (#PCDATA)>
+<!ATTLIST prevent
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT chemical (#PCDATA)>
+<!ATTLIST chemical
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT rate (#PCDATA)>
+<!ATTLIST rate
+  xmlns CDATA #FIXED ''>

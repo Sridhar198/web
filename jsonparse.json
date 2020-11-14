@@ -1,0 +1,17 @@
+<script>
+    var text = '{"stage":['+
+   '{"name": "Germination","id": "1","temperaturu": "20 to 25 0 C mean daily temperature"},'+
+   '{"name": "Tillering","id": "2","temperature": "16 to 20 0 C mean daily temperature"},'+
+   '{"name": "Accelerated growth","id": "3", "temperature": "20 to 23 0 C mean daily temperature"},'+
+   '{"name": "Proper gain filling","id": "4","temperature": "23 to 25 0 C mean daily temperature"},'+
+   '{"name": "Reproductive growth","id": "5","temperature": "21 to 25 0 C mean daily temperature"}]}';
+
+
+  var obj = JSON.parse(text);
+   document.getElementById("stage1").innerHTML =  "<li>" + obj.stages[0].name + " - " +  obj.stages[0].price + "</li>" ;
+    document.getElementById("stage2").innerHTML =  "<li>" + obj.stages[1].name + " - " +  obj.stages[1].price + "</li>" ;
+     document.getElementById("stage3").innerHTML =  "<li>" + obj.stages[2].name + " - " +  obj.stages[2].price + "</li>" ;
+      document.getElementById("stage4").innerHTML =  "<li>" + obj.stages[3].name + " - " +  obj.stages[3].price + "</li>" ;
+       document.getElementById("stage5").innerHTML =  "<li>" + obj.stages[4].name + " - " +  obj.stages[4].price + "</li>" ;
+
+</script>

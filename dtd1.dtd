@@ -1,0 +1,30 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT Agriculture (s)+>
+<!ATTLIST Agriculture
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT s (search_title,search_description,url,search_url,
+             search_post?)>
+<!ATTLIST s
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT search_title (#PCDATA)>
+<!ATTLIST search_title
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT search_description (#PCDATA)>
+<!ATTLIST search_description
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT url (#PCDATA)>
+<!ATTLIST url
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT search_url (#PCDATA)>
+<!ATTLIST search_url
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT search_post (#PCDATA)>
+<!ATTLIST search_post
+  xmlns CDATA #FIXED ''>

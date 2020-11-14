@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="rule.xsl"?> 
+ <Agriculture> 
+  <s> 
+	<search_title>Google Print</search_title>
+	<search_description>Google is working with libraries at the University of Michigan, Harvard University, Stanford University, Oxford University and the New York Public Library to digitize books in their collections and make them accessible via Google Print, a massive scanning project that will bring millions of volumes of printed books into the Google Print database.  Click a book title and you'll see the page of the book that has your search terms, your can search for more information within that specific book, find reviews, find related information, learn about the publisher, buy this book, and find nearby libraries that have it.</search_description>
+	<url>http://print.google.com</url>
+	<search_url>http://print.google.com/print?q={$formKeywords}</search_url>
+ 	</s>
+		<s>
+			<search_title>Online books Page</search_title>
+			<search_description>Online books Page, edited by John Mark Ockerbloom, at the University of Pennsylvania.  This is an excellent starting point in the search for full-text books on the Internet. Over 20,000 English works in various formats available online at different sites. Entries may be searched by author or title. An interesting feature allows browsing by Library of Congress call number categories. New listings are added regularly and are listed on a separate web page at &lt;a href=&quot;http://onlinebooks.library.upenn.edu/new.html&quot;&gt;http://onlinebooks.library.upenn.edu/new.html&lt;/a&gt;.</search_description>
+			<url>http://digital.library.upenn.edu/books/</url>
+			<search_url>http://onlinebooks.library.upenn.edu/webbin/book/search?tmode=words&amp;title={$formKeywords}</search_url>
+			
+		</s>
+		<s>
+			<search_title>Books-On-Line</search_title>
+			<search_description>A collection of over 32935 titles, although some are only excerpts. Browse by subject or search by author or title. Not all items are free.</search_description>
+			<url>http://www.books-on-line.com/</url>
+			<search_url>http://www.books-on-line.com/bol/KeyWordSearch.cfm?RowCount=50&amp;Searchquery={$formKeywords}</search_url>
+			
+		</s>
+		<s>
+			<search_title>Universal Library</search_title>
+			<search_description>The Universal Library is considerably more involved, and more ambitious -- it has amassed a collection of 100,000 e-books (some of them from Project Gutenberg), and is aiming for 1 million e-books by the end of 2006.</search_description>
+			<url>http://tera-3.ul.cs.cmu.edu/</url>
+			<search_url>http://tera-3.ul.cs.cmu.edu/cgi-bin/DBscripts/advsearch_db.cgi?perPage=25&amp;listStart=0&amp;author1=&amp;subject1=Any&amp;year1=&amp;year2=&amp;language1=Any&amp;scentre=Any&amp;search=Search&amp;title1={$formKeywords}</search_url>
+			
+		</s>
+		<s>
+			<search_title>E-STREAMS</search_title>
+			<search_description>E-STREAMS: Electronic reviews of Science &amp; Technology References covering Engineering, Agriculture, Medicine and Science. Each issue contains 30+ STM reviews, covering new titles in Engineering, Agriculture, Medicine and Science. Each review is signed, and includes the email address of the reviewer. The reviews feature short TOCs, a list of contributors and bibliographic information.</search_description>
+			<url>http://www.e-streams.com/</url>
+			<search_url>http://www.e-streams.com/c3/cgi-bin/search.pl</search_url>
+			<search_post>boolean=AND&amp;case=Insensitive&amp;terms={$formKeywords}</search_post>			
+		</s>
+		<s>
+			<search_title>AgNIC</search_title>
+			<search_description>AgNIC is a guide to quality agricultural information on the Internet as selected by the National Agricultural Library, Land-Grant Universities, and other institutions.</search_description>
+			<url>http://www.agnic.org/</url>
+			<search_url>http://www.agnic.org/advsearch/?submitted=1&amp;searchtype=AgResource&amp;keywords={$formKeywords}</search_url>
+			
+		</s>
+		<s>
+			<search_title>AGRICOLA articles (NAL Web: 1982- )</search_title>
+			<search_description>AGRICOLA covers the areas of agriculture, agricultural administration, agricultural laws and legislation, agricultural regulations, agricultural economics, agricultural education and training, agricultural extension and advisory work, agricultural engineering, agricultural products, animal science, entomology, aquatic science, fisheries, feed science, food science, food products, forestry, geography, meteorology, climatology, history, home economics, human ecology, household textiles and clothing, human nutrition, natural resources, pesticides, plant science, pollution, soil science, rural sociology, rural development, and human parasitology. It indexes journal articles and other publications as well as audiovisual materials, maps, books, software, conference proceedings, theses, research reports and government documents.</search_description>
+			<url>http://agricola.nal.usda.gov/</url>
+			<search_url>http://agricola.nal.usda.gov/cgi-bin/Pwebrecon.cgi?BOOL1=all+of+these&amp;FLD1=Keyword+Anywhere+%28GKEY%29&amp;GRP1=AND+with+next+set&amp;SAB2=&amp;BOOL2=any+of+these&amp;FLD2=Subject+%28SKEY%29&amp;GRP2=AND+with+next+set&amp;SAB3=&amp;BOOL3=as+a+phrase&amp;FLD3=Title+%28TKEY%29&amp;GRP3=AND+with+next+set&amp;SAB4=&amp;BOOL4=as+a+phrase&amp;FLD4=Author+Name+%28NKEY%29&amp;PID=4294&amp;SEQ=20060511212523&amp;CNT=25&amp;HIST=1&amp;SAB1={$formKeywords}</search_url>
+			
+		</s>
+		
+ </Agriculture> 

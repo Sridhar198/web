@@ -1,0 +1,45 @@
+[
+   {
+      "search_title": "Google Print",
+      "search_description": "Google is working with libraries at the University of Michigan, Harvard University, Stanford University, Oxford University and the New York Public Library to digitize books in their collections and make them accessible via Google Print, a massive scanning project that will bring millions of volumes of printed books into the Google Print database.  Click a book title and you'll see the page of the book that has your search terms, your can search for more information within that specific book, find reviews, find related information, learn about the publisher, buy this book, and find nearby libraries that have it.",
+      "url": "http://print.google.com",
+      "search_url": "http://print.google.com/print?q={$formKeywords}"
+   },
+   {
+      "search_title": "Online books Page",
+      "search_description": "Online books Page, edited by John Mark Ockerbloom, at the University of Pennsylvania.  This is an excellent starting point in the search for full-text books on the Internet. Over 20,000 English works in various formats available online at different sites. Entries may be searched by author or title. An interesting feature allows browsing by Library of Congress call number categories. New listings are added regularly and are listed on a separate web page at <a href=\"http://onlinebooks.library.upenn.edu/new.html\">http://onlinebooks.library.upenn.edu/new.html<\/a>.",
+      "url": "http://digital.library.upenn.edu/books/",
+      "search_url": "http://onlinebooks.library.upenn.edu/webbin/book/search?tmode=words&title={$formKeywords}"
+   },
+   {
+      "search_title": "Books-On-Line",
+      "search_description": "A collection of over 32935 titles, although some are only excerpts. Browse by subject or search by author or title. Not all items are free.",
+      "url": "http://www.books-on-line.com/",
+      "search_url": "http://www.books-on-line.com/bol/KeyWordSearch.cfm?RowCount=50&Searchquery={$formKeywords}"
+   },
+   {
+      "search_title": "Universal Library",
+      "search_description": "The Universal Library is considerably more involved, and more ambitious -- it has amassed a collection of 100,000 e-books (some of them from Project Gutenberg), and is aiming for 1 million e-books by the end of 2006.",
+      "url": "http://tera-3.ul.cs.cmu.edu/",
+      "search_url": "http://tera-3.ul.cs.cmu.edu/cgi-bin/DBscripts/advsearch_db.cgi?perPage=25&listStart=0&author1=&subject1=Any&year1=&year2=&language1=Any&scentre=Any&search=Search&title1={$formKeywords}"
+   },
+   {
+      "search_title": "E-STREAMS",
+      "search_description": "E-STREAMS: Electronic reviews of Science & Technology References covering Engineering, Agriculture, Medicine and Science. Each issue contains 30+ STM reviews, covering new titles in Engineering, Agriculture, Medicine and Science. Each review is signed, and includes the email address of the reviewer. The reviews feature short TOCs, a list of contributors and bibliographic information.",
+      "url": "http://www.e-streams.com/",
+      "search_url": "http://www.e-streams.com/c3/cgi-bin/search.pl",
+      "search_post": "boolean=AND&case=Insensitive&terms={$formKeywords}"
+   },
+   {
+      "search_title": "AgNIC",
+      "search_description": "AgNIC is a guide to quality agricultural information on the Internet as selected by the National Agricultural Library, Land-Grant Universities, and other institutions.",
+      "url": "http://www.agnic.org/",
+      "search_url": "http://www.agnic.org/advsearch/?submitted=1&searchtype=AgResource&keywords={$formKeywords}"
+   },
+   {
+      "search_title": "AGRICOLA articles (NAL Web: 1982- )",
+      "search_description": "AGRICOLA covers the areas of agriculture, agricultural administration, agricultural laws and legislation, agricultural regulations, agricultural economics, agricultural education and training, agricultural extension and advisory work, agricultural engineering, agricultural products, animal science, entomology, aquatic science, fisheries, feed science, food science, food products, forestry, geography, meteorology, climatology, history, home economics, human ecology, household textiles and clothing, human nutrition, natural resources, pesticides, plant science, pollution, soil science, rural sociology, rural development, and human parasitology. It indexes journal articles and other publications as well as audiovisual materials, maps, books, software, conference proceedings, theses, research reports and government documents.",
+      "url": "http://agricola.nal.usda.gov/",
+      "search_url": "http://agricola.nal.usda.gov/cgi-bin/Pwebrecon.cgi?BOOL1=all+of+these&FLD1=Keyword+Anywhere+%28GKEY%29&GRP1=AND+with+next+set&SAB2=&BOOL2=any+of+these&FLD2=Subject+%28SKEY%29&GRP2=AND+with+next+set&SAB3=&BOOL3=as+a+phrase&FLD3=Title+%28TKEY%29&GRP3=AND+with+next+set&SAB4=&BOOL4=as+a+phrase&FLD4=Author+Name+%28NKEY%29&PID=4294&SEQ=20060511212523&CNT=25&HIST=1&SAB1={$formKeywords}"
+   }
+]
